@@ -1,0 +1,5 @@
+Django==2.2.4
+requests==2.22.0
+gunicorn==19.9.0
+heroku==0.1.4
+pytz==2019.2

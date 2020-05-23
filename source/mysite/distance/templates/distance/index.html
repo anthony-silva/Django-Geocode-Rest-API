@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<html>
+<br><br>
+<head>
+	<h4>Enter the Place or Address</h4>
+</head>
+<br>
+<form method="get" action="results/">
+	{{ form.as_p }}
+	<button class="btn btn-info" type="submit">Submit</button>
+</form>
+</html>
+{% endblock %}

@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<br><br><br>
+<div>
+<b>Origin Address:</b> {{ data.origin.formatted_origin }}
+{% if data.origin.origin_lat %}
+<br><br>
+<b>Origin Coordinates:</b> Latitude {{ data.origin.origin_lat }}, Longitude {{ data.origin.origin_long }}
+{% endif %}
+</div>
+<br><br><br><br>
+
+<div>
+<b>Destination Address:</b> {{ data.destination.formatted_destination }}
+{% if data.destination.destination_lat %}
+<br><br>
+<b>Destination Coordinates:</b> Latitude {{ data.destination.destination_lat }}, Longitude {{ data.destination.destination_long }}
+{% endif %}
+</div>
+<br><br><br<br><br><br>
+
+<div>
+{% if data.distance %}
+<b>Calculated Distance:</b> {{ data.distance }} miles
+{% endif %}
+</div>
+<br><br<br><br>
+<div>
+<a href="/">
+  <button class="btn btn-info">Try Again?</button>
+</a>
+</div>
+{% endblock %}
