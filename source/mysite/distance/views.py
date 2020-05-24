@@ -5,12 +5,9 @@ import urllib.request
 from math import sin, cos, sqrt, atan2, radians
 import json
 
-'''
-
-'''
 
 endpoint = 'https://maps.googleapis.com/maps/api/geocode/json?'
-API_KEY = 'AIzaSyB8lreoVON9lpI28uTSXkRko9nrUKHRMsw'
+API_KEY = ''
 
 
 def IndexView(request):
